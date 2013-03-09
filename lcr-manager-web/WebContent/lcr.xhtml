@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Validacao LCR</title>
+
+</head>
+
+<body>
+
+	<form id="formLcr" action="rest/lcr/validar" method="post">
+
+		<input type="text" name="certificado" />
+
+		<input type="submit" value="validar" />
+
+	</form>
+
+	<form id="formCertificadoBase64" action="rest/lcr/recuperar/base64" method="post">
+	
+		<input type="text" name="certificateBase64" />
+
+		<input type="submit" value="buscar" />
+	
+	</form>
+
+
+	<a href="rest/lcr/recuperar?url=http://lcr.caixa.gov.br/accaixav2.crl">http://lcr.caixa.gov.br/accaixav2.crl</a>
+	<br/>
+	<a href="rest/lcr/recuperar?url=http://ccd.serpro.gov.br/lcr/acserprov2.crl">http://ccd.serpro.gov.br/lcr/acserprov2.crl</a>
+	<br />
+	<a href="rest/lcr/recuperar?url=http://ccd2.serpro.gov.br/lcr/acserprov3.crl">http://ccd2.serpro.gov.br/lcr/acserprov3.crl</a>
+	<br />
+	<a href="rest/lcr/recuperar?url=http://www.receita.fazenda.gov.br/acrfb/acrfb.crl">http://www.receita.fazenda.gov.br/acrfb/acrfb.crl</a>
+	<br />
+	<a href="rest/lcr/recuperar?url=http://crl.usertrust.com/AddTrustExternalCARoot.crl">http://crl.usertrust.com/AddTrustExternalCARoot.crl</a>
+	<br />
+</body>
+
+</html>

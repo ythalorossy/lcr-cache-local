@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+
+	<h:form id="formLCR" prependId="false">
+
+		<h:outputLabel value="URL"/>
+		
+		<br/>
+		
+		<h:inputText id="url" value="#{LCRManaged.lcrto.url}"/>
+		
+		<br/>
+		
+		<h:commandButton value="Solictar LCR" action="#{LCRManaged.getLCR()}">
+		
+		<f:ajax event="click" execute="formLCR:url" render="formLCR:lcrDados" />
+		
+		</h:commandButton>
+		
+		<h:outputText id="lcrDados" value="#{LCRManaged.lcrDados}"/>
+	
+	</h:form>
+
+</html>
