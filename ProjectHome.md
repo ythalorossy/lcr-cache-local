@@ -1,0 +1,1 @@
+Arquitetura para manter um Cache de Lista de Certificados revogados em ambiente local.
